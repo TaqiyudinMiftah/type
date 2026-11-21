@@ -1,0 +1,17 @@
+.venv*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+data/
+runs/
+reports/
+*.egg-info/
+dist/
+.coverage
+node_modules/
+test-results/
+playwright-report/
+.sites-runtime/
+/ketik-*.zip
+/Screenshot *.png

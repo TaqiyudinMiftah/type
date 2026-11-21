@@ -1,0 +1,175 @@
+{
+  "status": "complete",
+  "finished_at": "2026-11-08T05:13:26.011648+00:00",
+  "signature": {
+    "primary_results_sha256": "0b033014568b62ce8b9ed8f1773ed7d33af50c23740d2d99e1763e671416cba1",
+    "old_diagnostic_sha256": "eb52e50c09f47eba61e80f761164a0fd86ddd668105d0fa737b0186fe01b2b88",
+    "autopsy_sha256": "7ffe5884bd75471d712d1ba20f4c9cc7370792727913d66b3ace1a008ba37561",
+    "protocol_sha256": "1106287fcedb6ab4e30e60ca7b7e54e9a8ab274374b564496ba10cfb885e10c0",
+    "implementation_sha256": "e0d60ba7dc0933c58885c42bf02795c4a19273d1c7212d3a474f07ed0c2fcb97",
+    "segments_sha256": "5db9d652ce3de28b10b09c2d7b9b639913b8e13c8ed2b05c05db636be9bab180",
+    "features_sha256": "fcfd666dfb4a374f2060ec30f07409baf46d0ae6eb566c5b7738c3d5b90a6bd1"
+  },
+  "results_sha256": "0054c507f7664e3e54e03aefe5d3547af9ececfe2bbd52317d7fb1ef8a298511",
+  "hardware": {
+    "requested": "gpu",
+    "selected": "gpu",
+    "available": true,
+    "backend": "rocm",
+    "name": "AMD Radeon RX 6600 LE",
+    "reason": null,
+    "stage": "complete"
+  },
+  "runs": [
+    {
+      "variant": "leaky",
+      "seed": 42,
+      "support_accuracy": 0.9944444444444445,
+      "support_max_logit_range": 130.8681640625,
+      "accuracy": 0.6916666666666667,
+      "macro_f1": 0.6736765733266871,
+      "top5": 0.9388888888888889,
+      "correct": 249,
+      "n": 360,
+      "training_seconds": 201.89468928897986
+    },
+    {
+      "variant": "leaky",
+      "seed": 43,
+      "support_accuracy": 0.75,
+      "support_max_logit_range": 72.69743347167969,
+      "accuracy": 0.2833333333333333,
+      "macro_f1": 0.26222590409882435,
+      "top5": 0.7027777777777777,
+      "correct": 102,
+      "n": 360,
+      "training_seconds": 202.83634931099368
+    },
+    {
+      "variant": "leaky",
+      "seed": 44,
+      "support_accuracy": 0.9777777777777777,
+      "support_max_logit_range": 101.97836303710938,
+      "accuracy": 0.5333333333333333,
+      "macro_f1": 0.523068967353023,
+      "top5": 0.8361111111111111,
+      "correct": 192,
+      "n": 360,
+      "training_seconds": 201.46980625297874
+    },
+    {
+      "variant": "relu",
+      "seed": 42,
+      "support_accuracy": 0.027777777777777776,
+      "support_max_logit_range": 0.0,
+      "accuracy": 0.027777777777777776,
+      "macro_f1": 0.0015015015015015015,
+      "top5": 0.1388888888888889,
+      "correct": 10,
+      "n": 360,
+      "training_seconds": 204.08722652698634
+    },
+    {
+      "variant": "relu",
+      "seed": 43,
+      "support_accuracy": 0.7277777777777777,
+      "support_max_logit_range": 59.95225524902344,
+      "accuracy": 0.26666666666666666,
+      "macro_f1": 0.24273177675966412,
+      "top5": 0.6861111111111111,
+      "correct": 96,
+      "n": 360,
+      "training_seconds": 203.10369442700176
+    },
+    {
+      "variant": "relu",
+      "seed": 44,
+      "support_accuracy": 0.9472222222222222,
+      "support_max_logit_range": 103.78541564941406,
+      "accuracy": 0.5527777777777778,
+      "macro_f1": 0.531931414585632,
+      "top5": 0.8527777777777777,
+      "correct": 199,
+      "n": 360,
+      "training_seconds": 201.96365573699586
+    }
+  ],
+  "groups": [
+    {
+      "variant": "relu",
+      "accuracy_mean": 0.28240740740740744,
+      "accuracy_sd": 0.26285372013593494,
+      "support_mean": 0.5675925925925925,
+      "support_sd": 0.48019682607192155,
+      "constant_logit_runs": 1
+    },
+    {
+      "variant": "leaky",
+      "accuracy_mean": 0.5027777777777778,
+      "accuracy_sd": 0.20587437737430866,
+      "support_mean": 0.9074074074074074,
+      "support_sd": 0.13657328938883181,
+      "constant_logit_runs": 0
+    }
+  ],
+  "paired_difference": {
+    "mean": 0.22037037037037036,
+    "sd": 0.384522444452942,
+    "per_seed": {
+      "42": 0.6638888888888889,
+      "43": 0.016666666666666663,
+      "44": -0.019444444444444486
+    }
+  },
+  "cpu_replay": [
+    {
+      "variant": "leaky",
+      "seed": 42,
+      "confusion_match": true,
+      "weights_sha256": "9d4767a0c920e27906a375209387ef8e119e1751043b792e06ac703bc71a3443",
+      "reused_control": false
+    },
+    {
+      "variant": "leaky",
+      "seed": 43,
+      "confusion_match": true,
+      "weights_sha256": "4852e85b7be0bbc21b7e71ed730a4be488d5ddd9acb9e99734b97494c331d954",
+      "reused_control": false
+    },
+    {
+      "variant": "leaky",
+      "seed": 44,
+      "confusion_match": true,
+      "weights_sha256": "84e23393d2e1407989546173c9c852dcf2d51d9811f37ba83dd7d7ed77a0dacd",
+      "reused_control": false
+    },
+    {
+      "variant": "relu",
+      "seed": 42,
+      "confusion_match": true,
+      "weights_sha256": "c31d67a5faaf7e0c3fc4aefb1aadc081e56111359aca73def136e7fb8edb7061",
+      "reused_control": true
+    },
+    {
+      "variant": "relu",
+      "seed": 43,
+      "confusion_match": true,
+      "weights_sha256": "aaf880f258e3f49c7b262cf582611eeae960d473e198992aae508baaa842e5b6",
+      "reused_control": false
+    },
+    {
+      "variant": "relu",
+      "seed": 44,
+      "confusion_match": true,
+      "weights_sha256": "e57a5f916ec8c0d3d94b1420b3966d67e06b5fe7ec4295856da1bd75e8bf6a7a",
+      "reused_control": false
+    }
+  ],
+  "limitations": [
+    "Targeted exploratory diagnostic on previously examined within-file holdout",
+    "Fixed target phone K10 support seed101, only three training seeds",
+    "One old control reused, five new fits, no target validation or test-driven selection",
+    "Initialization SD is not support-draw or session SD",
+    "One gate changed in a small reference backbone, no SOTA or minimum-label claim"
+  ]
+}

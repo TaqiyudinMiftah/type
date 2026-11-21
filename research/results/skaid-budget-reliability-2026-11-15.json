@@ -1,0 +1,783 @@
+{
+  "cohort_ids": 17,
+  "unique_query_events": 1020,
+  "query_events_per_id": 60,
+  "draws": [
+    101,
+    102,
+    103
+  ],
+  "correct_counts_at_threshold": {
+    "80": 48,
+    "90": 54
+  },
+  "source_label_range_by_k": {
+    "1": [
+      1526,
+      1528
+    ],
+    "2": [
+      2073,
+      2078
+    ],
+    "3": [
+      2601,
+      2608
+    ],
+    "5": [
+      3595,
+      3618
+    ],
+    "10": [
+      5749,
+      5807
+    ]
+  },
+  "methods": {
+    "ridge": {
+      "curve": [
+        {
+          "k": 1,
+          "target_labels_per_fit": 12,
+          "cohort_accuracy": 0.4339869281045752,
+          "median_draw_range": 0.1,
+          "maximum_draw_range": 0.2,
+          "thresholds": {
+            "80": {
+              "at_least_once": 0,
+              "mean_of_draws": 0,
+              "every_draw": 0,
+              "every_draw_even_one_more_error": 0
+            },
+            "90": {
+              "at_least_once": 0,
+              "mean_of_draws": 0,
+              "every_draw": 0,
+              "every_draw_even_one_more_error": 0
+            }
+          }
+        },
+        {
+          "k": 2,
+          "target_labels_per_fit": 24,
+          "cohort_accuracy": 0.557843137254902,
+          "median_draw_range": 0.1,
+          "maximum_draw_range": 0.16666666666666666,
+          "thresholds": {
+            "80": {
+              "at_least_once": 1,
+              "mean_of_draws": 0,
+              "every_draw": 0,
+              "every_draw_even_one_more_error": 0
+            },
+            "90": {
+              "at_least_once": 0,
+              "mean_of_draws": 0,
+              "every_draw": 0,
+              "every_draw_even_one_more_error": 0
+            }
+          }
+        },
+        {
+          "k": 3,
+          "target_labels_per_fit": 36,
+          "cohort_accuracy": 0.6160130718954248,
+          "median_draw_range": 0.06666666666666667,
+          "maximum_draw_range": 0.2833333333333333,
+          "thresholds": {
+            "80": {
+              "at_least_once": 1,
+              "mean_of_draws": 1,
+              "every_draw": 0,
+              "every_draw_even_one_more_error": 0
+            },
+            "90": {
+              "at_least_once": 0,
+              "mean_of_draws": 0,
+              "every_draw": 0,
+              "every_draw_even_one_more_error": 0
+            }
+          }
+        },
+        {
+          "k": 5,
+          "target_labels_per_fit": 60,
+          "cohort_accuracy": 0.6901960784313725,
+          "median_draw_range": 0.08333333333333333,
+          "maximum_draw_range": 0.16666666666666666,
+          "thresholds": {
+            "80": {
+              "at_least_once": 5,
+              "mean_of_draws": 2,
+              "every_draw": 1,
+              "every_draw_even_one_more_error": 0
+            },
+            "90": {
+              "at_least_once": 0,
+              "mean_of_draws": 0,
+              "every_draw": 0,
+              "every_draw_even_one_more_error": 0
+            }
+          }
+        },
+        {
+          "k": 10,
+          "target_labels_per_fit": 120,
+          "cohort_accuracy": 0.7578431372549019,
+          "median_draw_range": 0.05,
+          "maximum_draw_range": 0.16666666666666666,
+          "thresholds": {
+            "80": {
+              "at_least_once": 9,
+              "mean_of_draws": 6,
+              "every_draw": 4,
+              "every_draw_even_one_more_error": 4
+            },
+            "90": {
+              "at_least_once": 0,
+              "mean_of_draws": 0,
+              "every_draw": 0,
+              "every_draw_even_one_more_error": 0
+            }
+          }
+        }
+      ],
+      "first_and_sustained_crossings": {
+        "80": {
+          "first": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "5": 1,
+            "10": 3,
+            "not_observed": 13
+          },
+          "sustained_to_k10": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "5": 1,
+            "10": 3,
+            "not_observed": 13
+          }
+        },
+        "90": {
+          "first": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "5": 0,
+            "10": 0,
+            "not_observed": 17
+          },
+          "sustained_to_k10": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "5": 0,
+            "10": 0,
+            "not_observed": 17
+          }
+        }
+      },
+      "k5_to_k10": {
+        "mean_decreased_ids": 0,
+        "at_least_one_draw_decreased_ids": 3
+      }
+    },
+    "linear": {
+      "curve": [
+        {
+          "k": 1,
+          "target_labels_per_fit": 12,
+          "cohort_accuracy": 0.41960784313725485,
+          "median_draw_range": 0.1,
+          "maximum_draw_range": 0.21666666666666667,
+          "thresholds": {
+            "80": {
+              "at_least_once": 0,
+              "mean_of_draws": 0,
+              "every_draw": 0,
+              "every_draw_even_one_more_error": 0
+            },
+            "90": {
+              "at_least_once": 0,
+              "mean_of_draws": 0,
+              "every_draw": 0,
+              "every_draw_even_one_more_error": 0
+            }
+          }
+        },
+        {
+          "k": 2,
+          "target_labels_per_fit": 24,
+          "cohort_accuracy": 0.5493464052287581,
+          "median_draw_range": 0.1,
+          "maximum_draw_range": 0.21666666666666667,
+          "thresholds": {
+            "80": {
+              "at_least_once": 1,
+              "mean_of_draws": 0,
+              "every_draw": 0,
+              "every_draw_even_one_more_error": 0
+            },
+            "90": {
+              "at_least_once": 0,
+              "mean_of_draws": 0,
+              "every_draw": 0,
+              "every_draw_even_one_more_error": 0
+            }
+          }
+        },
+        {
+          "k": 3,
+          "target_labels_per_fit": 36,
+          "cohort_accuracy": 0.6019607843137255,
+          "median_draw_range": 0.08333333333333333,
+          "maximum_draw_range": 0.18333333333333332,
+          "thresholds": {
+            "80": {
+              "at_least_once": 2,
+              "mean_of_draws": 1,
+              "every_draw": 1,
+              "every_draw_even_one_more_error": 1
+            },
+            "90": {
+              "at_least_once": 0,
+              "mean_of_draws": 0,
+              "every_draw": 0,
+              "every_draw_even_one_more_error": 0
+            }
+          }
+        },
+        {
+          "k": 5,
+          "target_labels_per_fit": 60,
+          "cohort_accuracy": 0.6803921568627451,
+          "median_draw_range": 0.06666666666666667,
+          "maximum_draw_range": 0.2,
+          "thresholds": {
+            "80": {
+              "at_least_once": 4,
+              "mean_of_draws": 3,
+              "every_draw": 2,
+              "every_draw_even_one_more_error": 1
+            },
+            "90": {
+              "at_least_once": 0,
+              "mean_of_draws": 0,
+              "every_draw": 0,
+              "every_draw_even_one_more_error": 0
+            }
+          }
+        },
+        {
+          "k": 10,
+          "target_labels_per_fit": 120,
+          "cohort_accuracy": 0.7663398692810458,
+          "median_draw_range": 0.06666666666666667,
+          "maximum_draw_range": 0.15,
+          "thresholds": {
+            "80": {
+              "at_least_once": 11,
+              "mean_of_draws": 6,
+              "every_draw": 4,
+              "every_draw_even_one_more_error": 4
+            },
+            "90": {
+              "at_least_once": 1,
+              "mean_of_draws": 0,
+              "every_draw": 0,
+              "every_draw_even_one_more_error": 0
+            }
+          }
+        }
+      ],
+      "first_and_sustained_crossings": {
+        "80": {
+          "first": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "5": 1,
+            "10": 2,
+            "not_observed": 13
+          },
+          "sustained_to_k10": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "5": 1,
+            "10": 2,
+            "not_observed": 13
+          }
+        },
+        "90": {
+          "first": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "5": 0,
+            "10": 0,
+            "not_observed": 17
+          },
+          "sustained_to_k10": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "5": 0,
+            "10": 0,
+            "not_observed": 17
+          }
+        }
+      },
+      "k5_to_k10": {
+        "mean_decreased_ids": 0,
+        "at_least_one_draw_decreased_ids": 2
+      }
+    },
+    "rbf": {
+      "curve": [
+        {
+          "k": 1,
+          "target_labels_per_fit": 12,
+          "cohort_accuracy": 0.41960784313725485,
+          "median_draw_range": 0.1,
+          "maximum_draw_range": 0.21666666666666667,
+          "thresholds": {
+            "80": {
+              "at_least_once": 0,
+              "mean_of_draws": 0,
+              "every_draw": 0,
+              "every_draw_even_one_more_error": 0
+            },
+            "90": {
+              "at_least_once": 0,
+              "mean_of_draws": 0,
+              "every_draw": 0,
+              "every_draw_even_one_more_error": 0
+            }
+          }
+        },
+        {
+          "k": 2,
+          "target_labels_per_fit": 24,
+          "cohort_accuracy": 0.5473856209150326,
+          "median_draw_range": 0.1,
+          "maximum_draw_range": 0.2,
+          "thresholds": {
+            "80": {
+              "at_least_once": 0,
+              "mean_of_draws": 0,
+              "every_draw": 0,
+              "every_draw_even_one_more_error": 0
+            },
+            "90": {
+              "at_least_once": 0,
+              "mean_of_draws": 0,
+              "every_draw": 0,
+              "every_draw_even_one_more_error": 0
+            }
+          }
+        },
+        {
+          "k": 3,
+          "target_labels_per_fit": 36,
+          "cohort_accuracy": 0.6107843137254901,
+          "median_draw_range": 0.06666666666666667,
+          "maximum_draw_range": 0.16666666666666666,
+          "thresholds": {
+            "80": {
+              "at_least_once": 2,
+              "mean_of_draws": 1,
+              "every_draw": 1,
+              "every_draw_even_one_more_error": 0
+            },
+            "90": {
+              "at_least_once": 0,
+              "mean_of_draws": 0,
+              "every_draw": 0,
+              "every_draw_even_one_more_error": 0
+            }
+          }
+        },
+        {
+          "k": 5,
+          "target_labels_per_fit": 60,
+          "cohort_accuracy": 0.6862745098039216,
+          "median_draw_range": 0.08333333333333333,
+          "maximum_draw_range": 0.15,
+          "thresholds": {
+            "80": {
+              "at_least_once": 4,
+              "mean_of_draws": 3,
+              "every_draw": 1,
+              "every_draw_even_one_more_error": 1
+            },
+            "90": {
+              "at_least_once": 0,
+              "mean_of_draws": 0,
+              "every_draw": 0,
+              "every_draw_even_one_more_error": 0
+            }
+          }
+        },
+        {
+          "k": 10,
+          "target_labels_per_fit": 120,
+          "cohort_accuracy": 0.7683006535947712,
+          "median_draw_range": 0.06666666666666667,
+          "maximum_draw_range": 0.11666666666666667,
+          "thresholds": {
+            "80": {
+              "at_least_once": 8,
+              "mean_of_draws": 7,
+              "every_draw": 6,
+              "every_draw_even_one_more_error": 4
+            },
+            "90": {
+              "at_least_once": 2,
+              "mean_of_draws": 0,
+              "every_draw": 0,
+              "every_draw_even_one_more_error": 0
+            }
+          }
+        }
+      ],
+      "first_and_sustained_crossings": {
+        "80": {
+          "first": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "5": 1,
+            "10": 4,
+            "not_observed": 11
+          },
+          "sustained_to_k10": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "5": 1,
+            "10": 5,
+            "not_observed": 11
+          }
+        },
+        "90": {
+          "first": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "5": 0,
+            "10": 0,
+            "not_observed": 17
+          },
+          "sustained_to_k10": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "5": 0,
+            "10": 0,
+            "not_observed": 17
+          }
+        }
+      },
+      "k5_to_k10": {
+        "mean_decreased_ids": 0,
+        "at_least_one_draw_decreased_ids": 2
+      }
+    }
+  },
+  "paired_method_overlap": [
+    {
+      "a": "ridge",
+      "b": "linear",
+      "k": 1,
+      "threshold": 80,
+      "both": 0,
+      "a_only": 0,
+      "b_only": 0
+    },
+    {
+      "a": "ridge",
+      "b": "linear",
+      "k": 1,
+      "threshold": 90,
+      "both": 0,
+      "a_only": 0,
+      "b_only": 0
+    },
+    {
+      "a": "ridge",
+      "b": "linear",
+      "k": 2,
+      "threshold": 80,
+      "both": 0,
+      "a_only": 0,
+      "b_only": 0
+    },
+    {
+      "a": "ridge",
+      "b": "linear",
+      "k": 2,
+      "threshold": 90,
+      "both": 0,
+      "a_only": 0,
+      "b_only": 0
+    },
+    {
+      "a": "ridge",
+      "b": "linear",
+      "k": 3,
+      "threshold": 80,
+      "both": 0,
+      "a_only": 0,
+      "b_only": 1
+    },
+    {
+      "a": "ridge",
+      "b": "linear",
+      "k": 3,
+      "threshold": 90,
+      "both": 0,
+      "a_only": 0,
+      "b_only": 0
+    },
+    {
+      "a": "ridge",
+      "b": "linear",
+      "k": 5,
+      "threshold": 80,
+      "both": 1,
+      "a_only": 0,
+      "b_only": 1
+    },
+    {
+      "a": "ridge",
+      "b": "linear",
+      "k": 5,
+      "threshold": 90,
+      "both": 0,
+      "a_only": 0,
+      "b_only": 0
+    },
+    {
+      "a": "ridge",
+      "b": "linear",
+      "k": 10,
+      "threshold": 80,
+      "both": 3,
+      "a_only": 1,
+      "b_only": 1
+    },
+    {
+      "a": "ridge",
+      "b": "linear",
+      "k": 10,
+      "threshold": 90,
+      "both": 0,
+      "a_only": 0,
+      "b_only": 0
+    },
+    {
+      "a": "ridge",
+      "b": "rbf",
+      "k": 1,
+      "threshold": 80,
+      "both": 0,
+      "a_only": 0,
+      "b_only": 0
+    },
+    {
+      "a": "ridge",
+      "b": "rbf",
+      "k": 1,
+      "threshold": 90,
+      "both": 0,
+      "a_only": 0,
+      "b_only": 0
+    },
+    {
+      "a": "ridge",
+      "b": "rbf",
+      "k": 2,
+      "threshold": 80,
+      "both": 0,
+      "a_only": 0,
+      "b_only": 0
+    },
+    {
+      "a": "ridge",
+      "b": "rbf",
+      "k": 2,
+      "threshold": 90,
+      "both": 0,
+      "a_only": 0,
+      "b_only": 0
+    },
+    {
+      "a": "ridge",
+      "b": "rbf",
+      "k": 3,
+      "threshold": 80,
+      "both": 0,
+      "a_only": 0,
+      "b_only": 1
+    },
+    {
+      "a": "ridge",
+      "b": "rbf",
+      "k": 3,
+      "threshold": 90,
+      "both": 0,
+      "a_only": 0,
+      "b_only": 0
+    },
+    {
+      "a": "ridge",
+      "b": "rbf",
+      "k": 5,
+      "threshold": 80,
+      "both": 0,
+      "a_only": 1,
+      "b_only": 1
+    },
+    {
+      "a": "ridge",
+      "b": "rbf",
+      "k": 5,
+      "threshold": 90,
+      "both": 0,
+      "a_only": 0,
+      "b_only": 0
+    },
+    {
+      "a": "ridge",
+      "b": "rbf",
+      "k": 10,
+      "threshold": 80,
+      "both": 3,
+      "a_only": 1,
+      "b_only": 3
+    },
+    {
+      "a": "ridge",
+      "b": "rbf",
+      "k": 10,
+      "threshold": 90,
+      "both": 0,
+      "a_only": 0,
+      "b_only": 0
+    },
+    {
+      "a": "linear",
+      "b": "rbf",
+      "k": 1,
+      "threshold": 80,
+      "both": 0,
+      "a_only": 0,
+      "b_only": 0
+    },
+    {
+      "a": "linear",
+      "b": "rbf",
+      "k": 1,
+      "threshold": 90,
+      "both": 0,
+      "a_only": 0,
+      "b_only": 0
+    },
+    {
+      "a": "linear",
+      "b": "rbf",
+      "k": 2,
+      "threshold": 80,
+      "both": 0,
+      "a_only": 0,
+      "b_only": 0
+    },
+    {
+      "a": "linear",
+      "b": "rbf",
+      "k": 2,
+      "threshold": 90,
+      "both": 0,
+      "a_only": 0,
+      "b_only": 0
+    },
+    {
+      "a": "linear",
+      "b": "rbf",
+      "k": 3,
+      "threshold": 80,
+      "both": 1,
+      "a_only": 0,
+      "b_only": 0
+    },
+    {
+      "a": "linear",
+      "b": "rbf",
+      "k": 3,
+      "threshold": 90,
+      "both": 0,
+      "a_only": 0,
+      "b_only": 0
+    },
+    {
+      "a": "linear",
+      "b": "rbf",
+      "k": 5,
+      "threshold": 80,
+      "both": 1,
+      "a_only": 1,
+      "b_only": 0
+    },
+    {
+      "a": "linear",
+      "b": "rbf",
+      "k": 5,
+      "threshold": 90,
+      "both": 0,
+      "a_only": 0,
+      "b_only": 0
+    },
+    {
+      "a": "linear",
+      "b": "rbf",
+      "k": 10,
+      "threshold": 80,
+      "both": 4,
+      "a_only": 0,
+      "b_only": 2
+    },
+    {
+      "a": "linear",
+      "b": "rbf",
+      "k": 10,
+      "threshold": 90,
+      "both": 0,
+      "a_only": 0,
+      "b_only": 0
+    }
+  ],
+  "k10_all_methods_stable_80": 3,
+  "k10_all_methods_stable_80_with_margin": 3,
+  "input_sha256": {
+    "research/audit_skaid_budget_reliability.py": "f99fcb7cee635f80c80b13330cf16f58c33bb85addcb773a7e800fbb78632702",
+    "reports/skaid-selection-audit/audit.json": "c05ce24705b7a5029d1ccfe6e12038e5550454b7712772eb859e64ad29e26c31",
+    "runs/skaid-selection/results.json": "c7b8e4364f7da928fd3acb7ddc2e9ada98d3d3844a3b6c9019e97f59c9a566a9",
+    "runs/skaid-selection/conditions.json": "3bc3c889fffccc704208d78eb1f643aa360fd85487be21b086fca4b17cdc2e9d",
+    "runs/skaid-selection/budgets.json": "586dbe742807438214aea8b51c38fdfeb0ce3868c9be400c8adcf604ca055b81",
+    "runs/skaid-selection/trials.json": "01b651405d7fe9bad8e56419efa7980956b8375cc1af7d292724fbf2a7e638b2",
+    "reports/skaid-svm-c-audit/audit.json": "6fae3db93bc4504a2a194b142d861684b170e1e2468cf165d9d3277ce047dfa2",
+    "runs/skaid-svm-c/results.json": "1b58545d3fa0353ad9c631d5e94e2787c71d33e477f8f7e0c7f0e0fb411516b2",
+    "runs/skaid-svm-c/conditions.json": "3bc3c889fffccc704208d78eb1f643aa360fd85487be21b086fca4b17cdc2e9d",
+    "runs/skaid-svm-c/budgets.json": "586dbe742807438214aea8b51c38fdfeb0ce3868c9be400c8adcf604ca055b81",
+    "runs/skaid-svm-c/trials.json": "37ae478b00cdd193cfba34b6ed76b2ae322a840d1f965b1d27eae02689bd707b"
+  },
+  "source_fit_records": {
+    "skaid-selection": 2448,
+    "skaid-svm-c": 4896
+  },
+  "evaluated_count_records": 765
+}

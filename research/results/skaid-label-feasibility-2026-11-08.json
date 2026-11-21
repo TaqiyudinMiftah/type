@@ -1,0 +1,110 @@
+{
+  "source": "https://zenodo.org/records/17282184",
+  "archive_sha256": "5e84c19209df891b88e8de600f171511e9af370be2de903d85353bd0b2c19eda",
+  "catalogue_code_sha256": "531c5f26039d72d186d964bca3f57e3de6e63abae3302c874bb567c3a91eefaa",
+  "count_only_assessment": true,
+  "audio_alignment_verified": false,
+  "recording_pairing_verified": false,
+  "participant_independence_verified": false,
+  "log_files": 27,
+  "events": {
+    "press": 102842,
+    "release": 99668
+  },
+  "phases": {
+    "Phase 1": 128804,
+    "Phase 2": 73706
+  },
+  "eligibility": {
+    "letters26": {
+      "classes": "abcdefghijklmnopqrstuvwxyz",
+      "eligible_logs_phase1_K_and_phase2_one_per_class": {
+        "1": 7,
+        "2": 6,
+        "3": 1,
+        "5": 0,
+        "10": 0
+      },
+      "phase1_min_class_presses_per_log": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        3,
+        2,
+        3,
+        2,
+        2
+      ]
+    },
+    "alphanumeric36": {
+      "classes": "abcdefghijklmnopqrstuvwxyz0123456789",
+      "eligible_logs_phase1_K_and_phase2_one_per_class": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "5": 0,
+        "10": 0
+      },
+      "phase1_min_class_presses_per_log": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "logs_with_scientific_timestamps": 1,
+  "logs_with_only_one_unique_timestamp": 1,
+  "created_at": "2026-11-08T13:09:38.672926+00:00",
+  "creators": [
+    "Benjamin Quattrone",
+    "Youakim Badr"
+  ],
+  "license": "CC BY 4.0",
+  "catalogue_sha256": "06aa4b4deaf8a1fa9e8b1cb185bb0bcbe45b8c22b3904af3fac8ddcf8909dc99",
+  "fetch_manifest_sha256": "ab29f949be61abfd4089bc8ca8a6682badd2090f79e559c8d4459a02d2c625b6",
+  "audio_downloaded": false,
+  "models_trained": 0
+}

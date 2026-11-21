@@ -1,0 +1,83 @@
+{
+  "status": "complete",
+  "signature": {
+    "primary_results_sha256": "0b033014568b62ce8b9ed8f1773ed7d33af50c23740d2d99e1763e671416cba1",
+    "protocol_sha256": "e8fc2ded90da2416774b330b68651678024703e4f1529f5d12755d214dff11e2",
+    "implementation_sha256": "a6db66790291e2612bede9d8cbbe1ac1e1983fcf57114d57c22c431fa445fb63"
+  },
+  "results_sha256": "eb52e50c09f47eba61e80f761164a0fd86ddd668105d0fa737b0186fe01b2b88",
+  "comparison": [
+    {
+      "target": "zoom",
+      "method": "coatnet_scratch",
+      "updates": 1000,
+      "accuracy": 0.027777777777777776,
+      "macro_f1": 0.0015015015015015015,
+      "support_accuracy": 0.027777777777777776,
+      "training_seconds": 20.131813811021857
+    },
+    {
+      "target": "zoom",
+      "method": "coatnet_adapt",
+      "updates": 1000,
+      "accuracy": 0.3194444444444444,
+      "macro_f1": 0.2885475304283076,
+      "support_accuracy": 0.5916666666666667,
+      "training_seconds": 20.18697580002481
+    },
+    {
+      "target": "zoom",
+      "method": "coatnet_scratch_long",
+      "updates": 10000,
+      "accuracy": 0.5472222222222223,
+      "macro_f1": 0.5240935930421432,
+      "support_accuracy": 0.9583333333333334,
+      "training_seconds": 204.68481126899133
+    },
+    {
+      "target": "phone",
+      "method": "coatnet_scratch",
+      "updates": 1000,
+      "accuracy": 0.05555555555555555,
+      "macro_f1": 0.020580415936766232,
+      "support_accuracy": 0.06111111111111111,
+      "training_seconds": 20.161428413994145
+    },
+    {
+      "target": "phone",
+      "method": "coatnet_adapt",
+      "updates": 1000,
+      "accuracy": 0.3638888888888889,
+      "macro_f1": 0.3463957218671305,
+      "support_accuracy": 0.5333333333333333,
+      "training_seconds": 20.45831142103998
+    },
+    {
+      "target": "phone",
+      "method": "coatnet_scratch_long",
+      "updates": 10000,
+      "accuracy": 0.027777777777777776,
+      "macro_f1": 0.0015015015015015015,
+      "support_accuracy": 0.027777777777777776,
+      "training_seconds": 204.08722652698634
+    }
+  ],
+  "cpu_replay": [
+    {
+      "target": "zoom",
+      "confusion_match": true,
+      "weights_sha256": "d72392700044e49cbb28eed010c98be1dc1f8169677e56cadeae36005f559184"
+    },
+    {
+      "target": "phone",
+      "confusion_match": true,
+      "weights_sha256": "c31d67a5faaf7e0c3fc4aefb1aadc081e56111359aca73def136e7fb8edb7061"
+    }
+  ],
+  "limitations": [
+    "Post-result diagnostic, defined before K10 completed",
+    "Only support seed 101 and model seed 42, both targets",
+    "10000-update schedule differs from primary 1000-update schedule",
+    "Within-file previously exposed target holdout, exploratory"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "checked_on": "2026-11-15",
+  "kind": "published-results provenance audit",
+  "thesis": {
+    "url": "https://arxiv.org/html/2611.13922v1",
+    "results_table": "6.1",
+    "source_attribution": "Sections 6.2 and 6.3.3"
+  },
+  "compared_tables": [
+    {
+      "url": "https://arxiv.org/html/2606.21210v1",
+      "table": "1",
+      "model_rows": 18,
+      "numeric_cells_compared": 216,
+      "different_cells": 0
+    },
+    {
+      "url": "https://arxiv.org/html/2606.21210v5",
+      "table": "1",
+      "model_rows": 18,
+      "numeric_cells_compared": 216,
+      "different_cells": 0
+    }
+  ],
+  "comparison_key": "head family, representation, scenario, ID/OOD, accuracy/macro-F1",
+  "common_reported_data": "The thesis identifies the companion study as an evaluation on the HEAR subset.",
+  "protocol_wording": {
+    "keyac_v1_keyboard_holdout_voip": "standard recording train, VoIP test",
+    "keyac_v5_keyboard_holdout_voip": "VoIP train and test",
+    "recording_split_artifact_verified": false
+  },
+  "public_hear_release": {
+    "url": "https://github.com/vikrant-vikram/Hear-Dataset/releases",
+    "latest_listed_tag": "v1",
+    "capture_scope": "on-device only",
+    "local_audit_participants": 36,
+    "local_audit_participants_with_multiple_device_tokens": 0
+  }
+}

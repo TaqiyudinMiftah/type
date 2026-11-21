@@ -1,0 +1,84 @@
+{
+  "source_commit": "2ecdc09b6d1868aae50813f6a6c842bdd52dab06",
+  "wav_hashes_verified": 72,
+  "ffprobe_tag_names_and_files": {},
+  "split": {
+    "configs_verified": 36,
+    "phone_query_events": 360,
+    "k5_adaptation_accuracy": 0.8351851851851851,
+    "wav_parent_overlap": [
+      {
+        "domain": "phone",
+        "fit_parent_count": 36,
+        "query_parent_count": 36,
+        "common_parent_count": 36,
+        "fits": 30
+      },
+      {
+        "domain": "zoom",
+        "fit_parent_count": 36,
+        "query_parent_count": 36,
+        "common_parent_count": 36,
+        "fits": 3
+      }
+    ]
+  },
+  "relative_timing": {
+    "marker_pair_screen": [
+      {
+        "per_marker_tolerance_ms": 25,
+        "max_relative_rate_change": 0.02,
+        "same_label_files_passing": 0,
+        "same_label_files_passing_without_ambiguous_export": 0,
+        "different_label_files_passing": 0
+      },
+      {
+        "per_marker_tolerance_ms": 50,
+        "max_relative_rate_change": 0.02,
+        "same_label_files_passing": 2,
+        "same_label_files_passing_without_ambiguous_export": 2,
+        "different_label_files_passing": 118
+      },
+      {
+        "per_marker_tolerance_ms": 100,
+        "max_relative_rate_change": 0.02,
+        "same_label_files_passing": 9,
+        "same_label_files_passing_without_ambiguous_export": 9,
+        "different_label_files_passing": 389,
+        "passing_when_omitting_one_per_side": 13,
+        "passing_when_omitting_one_per_side_without_ambiguous_export": 13
+      },
+      {
+        "per_marker_tolerance_ms": 200,
+        "max_relative_rate_change": 0.02,
+        "same_label_files_passing": 17,
+        "same_label_files_passing_without_ambiguous_export": 17,
+        "different_label_files_passing": 580
+      },
+      {
+        "per_marker_tolerance_ms": 200,
+        "max_relative_rate_change": 0.05,
+        "same_label_files_passing": 21,
+        "same_label_files_passing_without_ambiguous_export": 21,
+        "different_label_files_passing": 737,
+        "passing_when_omitting_one_per_side": 29,
+        "passing_when_omitting_one_per_side_without_ambiguous_export": 29
+      }
+    ],
+    "same_label_candidates": 36,
+    "different_label_candidates": 1260,
+    "range_and_median_of_first_to_last_elapsed_difference_s": [
+      0.08953911564625727,
+      1.1518333333333324,
+      4.733382653061227
+    ],
+    "verified_same_physical_keystroke_pairs": 0
+  },
+  "input_sha256": {
+    "data/external/harrison-prepared/manifest.json": "6503d97af197218e72c799c229acbd8ef18375b06ff7996282a658ed3f46b813",
+    "data/external/harrison-fewshot/manifest.json": "845876c26cea25323937cb1076c5f9bf4ab3bbfbb8d0b9712805a5fe818cfc4c",
+    "reports/resnet-fewshot-audit/audit.json": "181ef718fbac30f39ef5ad182ddbf825e2f46763af1fc6cf18f1be24b4bb20e2",
+    "runs/resnet-fewshot/results.json": "f519b4e93e74392f7407d67f1c45e4574a3ffab0893359ddf05f5462cf974178",
+    "research/audit_harrison_recording_provenance.py": "7a2c9f27c6f64a5cdf8a7bd58d7846dae42638dba6c21e33b8d878576ba4040f"
+  }
+}

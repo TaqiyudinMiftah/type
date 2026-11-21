@@ -1,0 +1,11 @@
+{
+  "repository": "https://github.com/xmu-xiaoma666/External-Attention-pytorch",
+  "commit": "c413dae1f053ac2bbff9e2d668e1d7a62f07c335",
+  "license": "MIT",
+  "files": {
+    "LICENSE": "fab1a2eca11a5ac309b96e8e983a72e0ebdb1402e6725ebdbe1b4e4c9daf5192",
+    "model/attention/CoAtNet.py": "c89925a35ce36f9ad947083c45bee38c66cc1b07784c00e8267c3dcf9bc49f53",
+    "model/attention/SelfAttention.py": "5874b1e74d412d2fe7e785d8a590a2c31bac35880d65b5b85c2fd94aa241b9b3",
+    "model/conv/MBConv.py": "b842ba165f6b6449975d3811ad79a0cab1578cc5053706f6c88ce2ad20eccec3"
+  }
+}

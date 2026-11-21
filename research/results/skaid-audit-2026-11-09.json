@@ -1,0 +1,251 @@
+{
+  "created_at": "2026-11-08T17:28:36.445242+00:00",
+  "local_date": "2026-11-09",
+  "status": "complete",
+  "input_sha256": {
+    "reports/skaid-audit/summary.json": "dc48afe459ea288b7ba0a7bda55fe4942484f4a9ca64a6a71ac9458c959b6444",
+    "reports/skaid-alignment/summary.json": "4f2764e4ba6e7589001dbcd133407433c79c2ead07a23bdd8f9ea47afcbcaad6",
+    "reports/skaid-alignment/pairs.json": "3aaf833495cb8e5d54a79d7da0765532c6bc6695d68480d6088cc9058353ab4d",
+    "reports/skaid-alignment/transformed-copy.json": "2ff0c4db03294b073896e01f14303f891050c5538ad45dc3873456975dfad067",
+    "reports/skaid-alignment-audit/audit.json": "e78ffc116512d61a95b4b27ddb463c248b95f54541b675f3d40189d715e93915",
+    "research/report_skaid.py": "4824e7096e62af2861263e15f18b7711e2d6a6ac9b632f6a2460df1d43d44b0b"
+  },
+  "native": {
+    "created_at": "2026-11-08T17:10:33.285404+00:00",
+    "status": "complete",
+    "source": "https://zenodo.org/records/17282184",
+    "license": "CC BY 4.0",
+    "environment": {
+      "python": "3.12.13",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+      "packages": {
+        "ketik-audio": "0.1.0",
+        "numpy": "2.5.4",
+        "scipy": "1.18.1",
+        "librosa": "0.11.0",
+        "scikit-learn": "1.9.1",
+        "torch": "2.14.0+cpu"
+      },
+      "gpu_visibility": {}
+    },
+    "decoders": {
+      "ffmpeg": "ffmpeg version 8.0.1-3ubuntu2 Copyright (c) 2000-2025 the FFmpeg developers",
+      "ffprobe": "ffprobe version 8.0.1-3ubuntu2 Copyright (c) 2007-2025 the FFmpeg developers"
+    },
+    "archive_files_crc_checked": 53,
+    "logs": 27,
+    "log_events": 202510,
+    "decoded_audio": 53,
+    "decode_failures": 0,
+    "canonical_m4a": 52,
+    "raw_audio_pcm_unique": 53,
+    "exact_duplicate_pcm_groups": 0,
+    "missing_audio_pairs": [
+      {
+        "session_token": "qt_1750019330494",
+        "phase": "Phase 1"
+      },
+      {
+        "session_token": "qt_1750019330494",
+        "phase": "Phase 2"
+      }
+    ],
+    "multiple_audio_candidates": [
+      {
+        "session_token": "qt_1748184742062",
+        "phase": "Phase 2"
+      }
+    ],
+    "collapsed_log_tokens": [
+      [
+        "qt_1753467140611"
+      ]
+    ],
+    "demographics_rows": 27,
+    "device_category_counts": {
+      "Desktop": 14,
+      "Laptop": 13
+    },
+    "sample_rate_counts": {
+      "48000": 52,
+      "16000": 1
+    },
+    "channels_counts": {
+      "1": 53
+    },
+    "total_decoded_seconds": 21982.336041666666,
+    "models_trained_or_evaluated": 0,
+    "audio_event_alignment_verified": false,
+    "eligibility": "pairing inventory only; offset/drift and event crops not verified"
+  },
+  "timing": {
+    "created_at": "2026-11-08T17:20:48.767302+00:00",
+    "status": "complete",
+    "pairs": 54,
+    "assessed_pairs": 50,
+    "not_assessed_pairs": 4,
+    "provisional_stable_pairs": 44,
+    "tokens_with_both_phases_stable": [
+      "qt_1746047498719",
+      "qt_1746895943943",
+      "qt_1748184742062",
+      "qt_1749404117992",
+      "qt_1749405175802",
+      "qt_1749408901065",
+      "qt_1749761963291",
+      "qt_1749917131651",
+      "qt_1749918170369",
+      "qt_1749929413209",
+      "qt_1749931434873",
+      "qt_1750017190705",
+      "qt_1750017896391",
+      "qt_1752430034157",
+      "qt_1752447148692",
+      "qt_1753275076740",
+      "qt_1753281609950",
+      "qt_1753283592735",
+      "qt_1753473543311",
+      "qt_1753476550135"
+    ],
+    "failed_criterion_counts": {
+      "coverage": 1,
+      "correlation": 6,
+      "unique_peak": 2,
+      "fit_controls": 2,
+      "validation_controls": 3,
+      "local_stability": 3
+    },
+    "strong_transformed_copy_evidence": false,
+    "models_trained_or_evaluated": 0,
+    "segmentation_certified": false,
+    "interpretation": "Timing-only diagnostics with log timestamps; provisional flags do not certify event labels or independent microphones/sessions."
+  },
+  "replay": {
+    "created_at": "2026-11-08T17:24:51.533005+00:00",
+    "status": "complete",
+    "pairs_replayed": 50,
+    "all_metrics_exact": true,
+    "all_arrays_exact": true,
+    "max_array_error": 0.0,
+    "max_independent_template_error": 1.1102230246251565e-16,
+    "max_direct_correlation_error": 2.4646951146678475e-14,
+    "scope": "timing reproducibility and numerical/state checks; does not certify physical event onsets or independence of microphone/session"
+  },
+  "transformed_copy_check": {
+    "m4a": "Participant Recordings/qt_1748184742062/qt_1748184742062_free_form.m4a",
+    "wav": "Participant Recordings/qt_1748184742062/qt_1748184742062_free_form.wav",
+    "source_rate": 48000,
+    "target_rate": 16000,
+    "resampling": {
+      "up": 1,
+      "down": 3,
+      "window": [
+        "kaiser",
+        5.0
+      ],
+      "padtype": "constant"
+    },
+    "m4a_seconds": 66.70933333333333,
+    "wav_seconds": 66.709375,
+    "resampled_frames": 1067350,
+    "wav_frames": 1067350,
+    "lag_samples": 0,
+    "lag_seconds": 0.0,
+    "overlap_samples": 1067350,
+    "pearson": 0.9915647583140375,
+    "least_squares_gain": 1.0002741770250778,
+    "residual_rms": 0.001007495415797579,
+    "relative_residual_rms": 0.12961222962986177,
+    "strong_transformed_copy_evidence": false
+  },
+  "descriptive_statistics": {
+    "stable_fit_correlation_median": 0.3740347500608985,
+    "stable_validation_correlation_median": 0.31245797128002784,
+    "stable_consecutive_press_gap_median_ms_across_files": 136.5,
+    "stable_fraction_consecutive_gaps_under_400ms_median_across_files": 0.9085426625494534,
+    "stable_validation_nearest_onset_median_ms_across_files": 10.0,
+    "stable_validation_nearest_onset_p90_median_ms_across_files": 20.0
+  },
+  "provisional_stable_partial_pairs": 5,
+  "both_stable_no_outside_press_tokens": 17,
+  "label_feasibility": [
+    {
+      "K": 1,
+      "both_stable_26": 3,
+      "both_stable_12_exploratory": 20,
+      "both_stable_no_outside_press_26": 2,
+      "both_stable_no_outside_press_12_exploratory": 17
+    },
+    {
+      "K": 2,
+      "both_stable_26": 2,
+      "both_stable_12_exploratory": 20,
+      "both_stable_no_outside_press_26": 1,
+      "both_stable_no_outside_press_12_exploratory": 17
+    },
+    {
+      "K": 3,
+      "both_stable_26": 0,
+      "both_stable_12_exploratory": 20,
+      "both_stable_no_outside_press_26": 0,
+      "both_stable_no_outside_press_12_exploratory": 17
+    },
+    {
+      "K": 5,
+      "both_stable_26": 0,
+      "both_stable_12_exploratory": 20,
+      "both_stable_no_outside_press_26": 0,
+      "both_stable_no_outside_press_12_exploratory": 17
+    },
+    {
+      "K": 10,
+      "both_stable_26": 0,
+      "both_stable_12_exploratory": 20,
+      "both_stable_no_outside_press_26": 0,
+      "both_stable_no_outside_press_12_exploratory": 17
+    }
+  ],
+  "exploratory_12_letters": [
+    "e",
+    "t",
+    "a",
+    "o",
+    "i",
+    "n",
+    "s",
+    "h",
+    "r",
+    "d",
+    "l",
+    "u"
+  ],
+  "models_trained_or_evaluated": 0,
+  "segmentation_certified": false,
+  "artifact_sha256": {
+    "kelayakan-k.csv": "593e3bb885b51ba2bfd1dc15f5465a2c486343fc673bfa77ccaa6e4bbdd775a9",
+    "korelasi-waktu.pdf": "9de7d4e3a9c8b81955995ed82af09ea9f979f2ebf7ef8070ba6c2b049bfab589",
+    "korelasi-waktu.png": "e4f216e4d5f9ddc68608c17dfe315054fb273a13c4c259785a123c5c3f3296ac",
+    "laporan.md": "5ee88494d258b61227437602e5f742f82f0d0d8ec5669b542b0fcd49961581e6",
+    "lock.json": "5a23c7486e8b10c4cb8274766a9ccc46a194658aefa333ee6e3ac71d3f7d41fd",
+    "overlay-waktu.pdf": "ba03013518622fa0ca98f75b45bb2a20bf4b288c77b9fb0dba2473a4e80b5c01",
+    "overlay-waktu.png": "5c87a807c35d7baf450c68b0bf304562a74788a06c496b29cd40e23c10f9a569",
+    "pergeseran-waktu.pdf": "cee20496aad08c54ff47e16485982e3654e16baf9e5946f56736d869edbe4b12",
+    "pergeseran-waktu.png": "e3aec1f76c222bc9796092537ab0f0cafa94a50c008867abed3598396cc6b2d3"
+  },
+  "report_summary_sha256": "fe9ac5a9a2ec7fb71bd9cd6f0940fe49b73ec312c48623c8c05501ecc16c9eea",
+  "snapshot_created_at": "2026-11-08T17:30:59.138958+00:00",
+  "verification": {
+    "pytest": {
+      "passed": 90,
+      "warnings": 24,
+      "warnings_source": "existing vendored MBConv saved_variables deprecation"
+    },
+    "ruff_check": "passed",
+    "ruff_format_check": {
+      "passed": true,
+      "files": 110
+    },
+    "uv_lock_check_offline": "passed",
+    "build": "wheel and sdist passed offline"
+  }
+}

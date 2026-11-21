@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-11-08T14:13:54.545346+00:00",
+  "status": "complete",
+  "source": "https://data.mendeley.com/datasets/bpt2hvf8n3/3",
+  "creators": [
+    "Karwan Mahdi Rawf",
+    "Ayub Abdulrahman"
+  ],
+  "license": "CC BY 4.0",
+  "archive_sha256": "01fad57bf972782aa1cab74602e1965c0e489d7dceb37e36668a1d44f95ecb64",
+  "wav_audit_sha256": "bdb5770136b71f491d6c105e4e375ffa45a5fc58d61fb2a26669f14335682ea2",
+  "decoder_code_sha256": "6278121e429d423d81914608da95c1882a85a6de18dfe4b77edddb122cb59f73",
+  "audit_code_sha256": "1b29ff4b9508fbc1406e2ac0b25688564adae3c1f02ffd8406541fb267926a75",
+  "objects_decoded": 120,
+  "canonical_objects": 60,
+  "aggregate_objects": 60,
+  "objects_with_exact_existing_waveform_match": 120,
+  "additional_unique_pcm": 0,
+  "objects_sha256": "84834192ee05245e7d4ee8b2ae0fee9280c1e2f832068226c491ac94677489da"
+}

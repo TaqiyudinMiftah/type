@@ -1,0 +1,18 @@
+{
+  "recorded_at": "2026-11-07T15:08:58.355540+00:00",
+  "reason": "Post-result optimization diagnostic; scratch underfits its actual support at 1000 updates",
+  "diagnostic_protocol_sha256": "e8fc2ded90da2416774b330b68651678024703e4f1529f5d12755d214dff11e2",
+  "triggering_conditions": [
+    {
+      "directory": "phone-to-zoom-coatnet_scratch-k1-s101",
+      "sha256": "6eff0714245c8e0623ac94b729152918784bb377704b66e99a7d6247777e9487",
+      "support_accuracy": 0.3333333333333333
+    },
+    {
+      "directory": "phone-to-zoom-coatnet_scratch-k1-s102",
+      "sha256": "6ab70c167fb7077b9158224800d2b47b6f061611112300050e3d8781c4d78c4c",
+      "support_accuracy": 0.2222222222222222
+    }
+  ],
+  "k10_completed_at_definition": []
+}

@@ -1,0 +1,27 @@
+{
+  "created_at": "2026-11-08T14:07:23.222913+00:00",
+  "source": "https://data.mendeley.com/datasets/bpt2hvf8n3/3",
+  "creators": [
+    "Karwan Mahdi Rawf",
+    "Ayub Abdulrahman"
+  ],
+  "license": "CC BY 4.0",
+  "archive_sha256": "01fad57bf972782aa1cab74602e1965c0e489d7dceb37e36668a1d44f95ecb64",
+  "audit_summary_sha256": "bdb5770136b71f491d6c105e4e375ffa45a5fc58d61fb2a26669f14335682ea2",
+  "header_check_sha256": "41a07c836007d42c0ea39d5c2adc5f159d8005fcbd50c2630a22e87c59e06ee4",
+  "curation_code_sha256": "f29869eca080ba81894da8bde461dc3378746b4705742999aca16da18d218663",
+  "class_order": "1234567890qwertyuiopasdfghjklzxcvbnm",
+  "unit": "supplied audio excerpt, not an annotated isolated keystroke",
+  "label_source": "author file/folder names",
+  "parent_groups": 216,
+  "unique_parent_pcm": 216,
+  "unique_supplied_clip_pcm": 1296,
+  "minimum_unique_clips_per_group": 6,
+  "cross_recording_calibration_test_eligible": false,
+  "split_decision": {
+    "cross_recording_calibration_test_eligible": false,
+    "status": "not_supported_by_supplied_raw_files",
+    "explanation": "Untuk seluruh 36 kelas pada setiap folder platform, hanya ada satu WAV mentah per kelas. Potongan dan folder agregat tidak menyediakan rekaman target kedua untuk kalibrasi/uji lintas rekaman. Dengan struktur yang tersedia, MKA belum mendukung pertanyaan utama tersebut. Split dalam WAV atau evaluasi lintas dataset tanpa kalibrasi merupakan pertanyaan lain dan memerlukan protokol terpisah sebelum menilai model."
+  },
+  "manifest_sha256": "fc8697c58742521e0db5274bfd609d44b54dbc579b8083d719e7909cf6d87e05"
+}

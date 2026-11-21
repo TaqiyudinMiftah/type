@@ -1,0 +1,29 @@
+{
+  "schema": "ketik-web-alignment-protocol/v2",
+  "method": "calibration-affine-consensus-v2",
+  "purpose": "Evaluate a robust affine fit without changing the v1 detector, raw recordings, or v1 qualification.",
+  "development_sources": [
+    {"session": "8cc93c85", "zip_sha256": "f3b06204a4c6b33ac6355a05f2710a902228384f59d4c585f4f4dcf313efe302"},
+    {"session": "e9be52b8", "zip_sha256": "023e90cb0f0b2f6d2f73b2bc2fa5188a656776113233fcfe72272e3938bd0470"}
+  ],
+  "detector": "Unchanged calibration-affine-energy-v1: 5 ms RMS, +/-250 ms search, max(1e-4, 4*quiet RMS), competing peak rule unchanged.",
+  "split": "Within each phase, even ordinal markers are fit only and odd ordinal markers are validation only. Validation peaks, missingness and residuals never choose or refit an affine model.",
+  "model": "Enumerate cross-phase pairs of usable training markers, derive affine hypotheses, classify training inliers within 20 ms, refit each training consensus by least squares, and deduplicate by training inlier IDs. Prefer maximum support then minimum training squared error. Flag equally supported hypotheses whose endpoint predictions differ by more than 20 ms.",
+  "limits": {
+    "residual_ms": 20.0,
+    "max_drift_fraction": 0.005,
+    "minimum_training_inliers_per_phase": 3,
+    "minimum_validation_markers_per_phase": 3,
+    "required_markers_per_phase": 8
+  },
+  "qualification": "Every marker must still pass the unchanged signal/ambiguity gate. Training peak outliers may be excluded from fitting when support remains sufficient. All usable validation markers must meet the residual bound; none may be trimmed. Capture, clock, dispatch or replay failures remain disqualifying. This qualifies boundary-marker consistency, not physical onset or arbitrary timing between calibration groups.",
+  "synthetic_evaluation": {
+    "seed_range": [7100, 7111],
+    "rates": [16000, 48000],
+    "cases": ["clean", "drift", "training_distractor", "validation_distractor", "weak_markers", "silence", "stationary_noise", "competing_peaks", "missing_end", "dispatch_lag", "capture_interrupted", "insufficient_training_support"],
+    "positive_cases": ["clean", "drift", "training_distractor"],
+    "maximum_known_mapping_error_ms": 10.0,
+    "nonlinear_boundary_blind_spot": "Report a separate hidden mid-session 80 ms timing bend with unchanged boundary markers. Boundary-only validation cannot establish interior alignment. Do not count it as a positive recovery."
+  },
+  "reporting": "Retain both old and new statuses. Reanalysis of the observed Realtek pilot is development evidence, never independent validation. No classifier training. CPU only."
+}

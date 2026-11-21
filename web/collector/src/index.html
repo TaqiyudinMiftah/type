@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ketik Audio</title>
+  <meta name="description" content="Rekam suara dan tombol yang ditekan untuk riset. Sesi disimpan di browser Anda.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'none'; worker-src 'self'; media-src 'self' blob:; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./readability.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Ketik Audio, beranda"><span class="brand-icon" aria-hidden="true">⌨</span> ketik<span class="brand-dot">.</span><span class="brand-sub">audio research</span></a>
+    <nav aria-label="Navigasi utama">
+      <a href="#recorder" class="selected">Rekam</a>
+      <a href="#sessions">Sesi saya</a>
+      <button id="guide-open" type="button" class="nav-button">Panduan</button>
+    </nav>
+  </header>
+  <main>
+    <div class="page-heading"><h1>Rekam suara ketikan</h1></div>
+    <div id="compatibility" class="notice" hidden></div>
+    <div id="message" class="notice" role="status" aria-live="polite" hidden></div>
+    <div class="workspace" id="recorder">
+      <section id="typing-card" class="typing-card" aria-labelledby="typing-title" data-phase="idle">
+        <div class="card-top">
+          <div><p class="section-label">Area mengetik</p><h2 id="typing-title">Mulai dari satu kalimat</h2></div>
+          <div class="typing-status">
+            <span id="phase-badge" class="pill" role="status">Belum merekam</span>
+            <button id="cancel" type="button" class="button secondary" hidden>Batal</button>
+          </div>
+        </div>
+        <div class="typing-toolbar" id="typing-toolbar">
+          <span id="task-label">Kalimat</span>
+          <div class="metrics"><span><strong id="remaining">0</strong> / 675 ketukan</span></div>
+        </div>
+        <div class="typing-surface" id="typing-surface">
+          <p id="prompt" class="prompt"></p>
+          <div id="sync-instruction" class="sync-instruction" tabindex="0" aria-label="Panduan pemeriksaan Spasi" hidden>
+            <span id="sync-number" hidden></span>
+            <h3 id="sync-title">Menyiapkan mikrofon</h3>
+            <p id="sync-description">Klik Izinkan jika browser meminta akses mikrofon.</p>
+            <div id="sync-cue" class="sync-cue" role="status" aria-atomic="true" hidden>
+              <strong id="sync-countdown" class="mono" hidden></strong>
+              <span id="sync-cue-label">Tekan Spasi sekarang</span>
+            </div>
+          </div>
+        </div>
+        <label class="sr-only" for="typing-input">Ketik sesuai panduan</label>
+        <textarea id="typing-input" class="typing-input" rows="3" disabled placeholder="Area mengetik akan aktif setelah mikrofon siap." spellcheck="false" autocomplete="off" autocorrect="off" autocapitalize="off"></textarea>
+        <p id="typing-note" class="typing-bottom">Ikuti kalimat, lalu latihan tombol yang masih kurang. Salah ketik tetap tercatat.</p>
+        <div id="audio-panel" class="audio-panel" hidden>
+          <p id="sound-status" role="status" aria-live="polite">Mengukur suara latar</p>
+          <canvas id="audio-wave" height="60" aria-label="Visualisasi suara mikrofon"></canvas>
+          <details class="recorder-details">
+            <summary>Rincian suara</summary>
+            <div class="details-body">
+              <div class="audio-relative"><strong id="relative-level">Mikrofon tidak aktif</strong><span id="noise-floor">Referensi diukur saat hening.</span></div>
+              <p id="tap-level" class="helper"></p>
+              <ol id="tap-results" class="tap-results" aria-label="Hasil tiap ketukan pemeriksaan" hidden></ol>
+            </div>
+          </details>
+        </div>
+        <div id="coverage" class="coverage">
+          <div class="coverage-heading"><h3>Kuota per tombol</h3><span><b id="coverage-total">0 / 27</b> tombol mencapai kuota</span></div>
+          <div id="letter-grid" class="live-keyboard" aria-label="Kuota 25 ketukan per tombol"></div>
+          <p id="last-key" class="last-key">Belum ada tombol ditekan.</p>
+          <details class="recorder-details">
+            <summary>Tombol tambahan</summary>
+            <div class="details-body">
+              <div id="extra-key-grid" class="extra-keyboard" aria-label="Ketukan tombol tambahan"></div>
+              <p>Ketukan ini ikut direkam di luar kuota 675.</p>
+            </div>
+          </details>
+        </div>
+      </section>
+      <aside id="setup-card" class="setup-card" aria-label="Siapkan sesi">
+        <h2>Siapkan sesi</h2>
+        <p id="study-stage" class="study-stage">Kalibrasi · Hari 1 dari 3</p>
+        <div class="participant">
+          <div><span>ID peserta</span><strong id="participant-code" class="mono">Dibuat saat sesi pertama</strong></div>
+          <button id="copy-code" type="button" class="icon-button" aria-label="Salin ID peserta">⧉</button>
+        </div>
+        <label class="field">Nama perangkat
+          <input id="laptop" maxlength="120" placeholder="Contoh Lenovo LOQ atau Logitech K380" required>
+        </label>
+        <label class="consent">
+          <input id="consent" type="checkbox">
+          <span>Saya setuju memeriksa mikrofon serta merekam suara dan tombol di area mengetik saat sesi dimulai. Rekaman disimpan di browser ini.</span>
+        </label>
+        <label class="field">Mikrofon
+          <select id="microphone" aria-label="Pilih mikrofon">
+            <option value="default">Default perangkat (otomatis)</option>
+          </select>
+        </label>
+        <div class="mic-actions">
+          <button id="check-mic" type="button" class="button secondary" aria-describedby="mic-feedback" disabled>Periksa mikrofon</button>
+          <button id="load-mics" type="button" class="button secondary">Pilih mikrofon lain</button>
+        </div>
+        <p id="mic-picker-note" class="helper" role="status" hidden></p>
+        <p id="mic-feedback" class="helper mic-feedback" role="status" aria-live="polite" hidden></p>
+        <div class="level-label"><span id="mic-status">Belum diperiksa</span><span id="live-level" class="mono">— dBFS</span></div>
+        <meter id="mic-meter" min="-90" max="0" value="-90" aria-label="Level mikrofon dalam dBFS"></meter>
+        <details id="mic-check-result" class="recorder-details" hidden>
+          <summary>Rincian pemeriksaan</summary>
+          <div class="details-body">
+            <p id="mic-check-device" class="helper"></p>
+            <ol id="mic-check-taps" class="tap-results" aria-label="Hasil tiap ketukan pemeriksaan"></ol>
+          </div>
+        </details>
+        <button id="start" type="button" class="button primary" aria-describedby="start-note mic-feedback" disabled>Mulai sesi</button>
+        <p id="start-note" class="start-note">Ikuti petunjuk Spasi, lalu ketik sampai kuota 675 ketukan terpenuhi.</p>
+        <div class="setup-actions">
+          <button id="download-check" type="button" class="button secondary" hidden>Unduh hasil pemeriksaan</button>
+          <button id="restore-open" type="button" class="button secondary">Pulihkan studi dari ZIP</button>
+          <button id="new-study" type="button" class="button secondary" hidden>Buat studi baru</button>
+        </div>
+        <input id="restore-file" type="file" accept=".zip,application/zip" hidden>
+      </aside>
+    </div>
+    <section id="result" class="result-card" hidden aria-live="polite">
+      <div><h2 id="result-title">Sesi tersimpan</h2><p id="result-description"></p><p id="result-quality" class="helper"></p></div>
+      <button id="download-latest" type="button" class="button primary">Unduh ZIP</button>
+    </section>
+    <section id="sessions" class="history-section">
+      <div class="section-heading"><h2>Sesi saya</h2><span id="session-count" class="muted">0 sesi</span></div>
+      <div id="session-list" class="session-list"><div class="empty-state"><p>Belum ada sesi tersimpan.</p></div></div>
+    </section>
+  </main>
+  <dialog id="guide">
+    <div class="dialog-heading"><h2>Cara merekam</h2><button id="guide-close" type="button" class="icon-button" aria-label="Tutup panduan">✕</button></div>
+    <ol>
+      <li>Isi nama perangkat, centang persetujuan, lalu klik <strong>Mulai sesi</strong>. Izinkan mikrofon jika diminta browser.</li>
+      <li>Ikuti petunjuk Spasi, lalu ketik sesuai teks di layar. Setelah kuota 675 ketukan terpenuhi, ikuti petunjuk Spasi sekali lagi.</li>
+      <li>Unduh ZIP. Gunakan perangkat yang sama pada dua hari berikutnya untuk sesi uji.</li>
+    </ol>
+    <p>Gunakan <strong>Periksa mikrofon</strong> untuk menguji keterdengaran ketukan sebelum merekam.</p>
+    <p>Rekaman tersimpan di browser ini. Simpan ZIP agar profil dapat dipulihkan jika data browser terhapus.</p>
+  </dialog>
+  <noscript>Web perekam ini membutuhkan JavaScript dan Chrome atau Edge desktop.</noscript>
+</body>
+</html>

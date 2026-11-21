@@ -1,0 +1,49 @@
+{
+  "reference_url": "https://raw.githubusercontent.com/pytorch/audio/v0.13.0/torchaudio/compliance/kaldi.py",
+  "purpose": "Pure torch fbank compatibility with official torchaudio v0.13.0; no model tuning",
+  "upstream_sha256": "5cbea1a584ddea748f6f68a621d794e13334e88d9faa1d40986f7af32f196d29",
+  "standalone_sha256": "8585a6b05b08ac99685a7c36e4b8ae402fde3adcae39ab01198d97364ffb74a3",
+  "vendored_sha256": "ba9c577d3faa6a07a6f9f461ab80b269683c76dd0cdfffe35541b1b4fe72eb73",
+  "comparisons": [
+    {
+      "domain": "phone",
+      "index": 0,
+      "max_abs_difference": 0.0
+    },
+    {
+      "domain": "phone",
+      "index": 224,
+      "max_abs_difference": 0.0
+    },
+    {
+      "domain": "phone",
+      "index": 424,
+      "max_abs_difference": 0.0
+    },
+    {
+      "domain": "phone",
+      "index": 899,
+      "max_abs_difference": 0.0
+    },
+    {
+      "domain": "zoom",
+      "index": 0,
+      "max_abs_difference": 0.0
+    },
+    {
+      "domain": "zoom",
+      "index": 224,
+      "max_abs_difference": 0.0
+    },
+    {
+      "domain": "zoom",
+      "index": 424,
+      "max_abs_difference": 0.0
+    },
+    {
+      "domain": "zoom",
+      "index": 899,
+      "max_abs_difference": 0.0
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "repository": "https://github.com/microsoft/unilm",
+  "commit": "5bdcf477f4d05b495e0512503b7d5692ab1e4568",
+  "kaldi_repository": "https://github.com/pytorch/audio",
+  "kaldi_commit": "ec13a815b13ec6be3eeb8c3eb9ccb725dc322233",
+  "patches": [
+    "BEATs.py imports vendored kaldi instead of torchaudio.compliance.kaldi",
+    "kaldi.py omits torchaudio native import; unused DCT/MFCC path raises NotImplementedError"
+  ],
+  "files": {
+    "BEATs.py": {
+      "url": "https://raw.githubusercontent.com/microsoft/unilm/5bdcf477f4d05b495e0512503b7d5692ab1e4568/beats/BEATs.py",
+      "upstream_sha256": "27f289db7c56ce26f2ceb50d3719854b91b2dec1c2830d8b1dd8de1bbee19eeb",
+      "sha256": "75b5d4766304a93a6012d27daa57d07b76f4e12fc522a6713a689a67585a9c3e"
+    },
+    "backbone.py": {
+      "url": "https://raw.githubusercontent.com/microsoft/unilm/5bdcf477f4d05b495e0512503b7d5692ab1e4568/beats/backbone.py",
+      "upstream_sha256": "b8e6531bce652a8761fc6fdbca9b2be5ba07125b9aac4fa2e68d87be34198f65",
+      "sha256": "b8e6531bce652a8761fc6fdbca9b2be5ba07125b9aac4fa2e68d87be34198f65"
+    },
+    "modules.py": {
+      "url": "https://raw.githubusercontent.com/microsoft/unilm/5bdcf477f4d05b495e0512503b7d5692ab1e4568/beats/modules.py",
+      "upstream_sha256": "edeb6b6cd6a784da749f932c3e0783c0bce556fc768d0d23a4d53d4b819eb424",
+      "sha256": "edeb6b6cd6a784da749f932c3e0783c0bce556fc768d0d23a4d53d4b819eb424"
+    },
+    "LICENSE": {
+      "url": "https://raw.githubusercontent.com/microsoft/unilm/5bdcf477f4d05b495e0512503b7d5692ab1e4568/LICENSE",
+      "upstream_sha256": "904dc4d8749877f1dba1cda48200d2462dccbeb7c134d5e4ef6fa75e0198c8fe",
+      "sha256": "904dc4d8749877f1dba1cda48200d2462dccbeb7c134d5e4ef6fa75e0198c8fe"
+    },
+    "kaldi.py": {
+      "url": "https://raw.githubusercontent.com/pytorch/audio/ec13a815b13ec6be3eeb8c3eb9ccb725dc322233/src/torchaudio/compliance/kaldi.py",
+      "upstream_sha256": "5cbea1a584ddea748f6f68a621d794e13334e88d9faa1d40986f7af32f196d29",
+      "sha256": "ba9c577d3faa6a07a6f9f461ab80b269683c76dd0cdfffe35541b1b4fe72eb73"
+    },
+    "KALDI_LICENSE": {
+      "url": "https://raw.githubusercontent.com/pytorch/audio/ec13a815b13ec6be3eeb8c3eb9ccb725dc322233/LICENSE",
+      "upstream_sha256": "93a58861a858cc108e6b6b833e08e76e8b2a66339e4a8007c8a5a8c1ff9c40d6",
+      "sha256": "93a58861a858cc108e6b6b833e08e76e8b2a66339e4a8007c8a5a8c1ff9c40d6"
+    }
+  }
+}

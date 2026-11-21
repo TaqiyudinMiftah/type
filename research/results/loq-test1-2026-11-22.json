@@ -1,0 +1,154 @@
+{
+  "clipped_samples": 0,
+  "coverage": {
+    "counts": {
+      "a": 14,
+      "b": 24,
+      "c": 22,
+      "d": 22,
+      "e": 18,
+      "f": 20,
+      "g": 22,
+      "h": 24,
+      "i": 22,
+      "j": 24,
+      "k": 23,
+      "l": 21,
+      "m": 24,
+      "n": 20,
+      "o": 20,
+      "p": 20,
+      "q": 23,
+      "r": 20,
+      "s": 19,
+      "space": 15,
+      "t": 24,
+      "u": 19,
+      "v": 22,
+      "w": 22,
+      "x": 23,
+      "y": 22,
+      "z": 22
+    },
+    "eligible": 675,
+    "excluded": {
+      "neighbor_press_or_release": 65,
+      "weak_local_transient": 39
+    },
+    "used": 571
+  },
+  "device": "Lenovo LOQ",
+  "duration_seconds": 293.22133333333335,
+  "hardware": "CPU",
+  "majority_baseline": 0.04203152364273205,
+  "official_prospective_status": "not_scored_timing_gate",
+  "preflight_clear_taps": 8,
+  "pretrained_models": {
+    "cnn": {
+      "accuracy": 0.08056042031523643,
+      "correct": 46,
+      "letters_only": {
+        "accuracy": 0.07194244604316546,
+        "correct": 40,
+        "macro_accuracy": 0.07304430885666582,
+        "macro_f1": 0.06845313930780636,
+        "n": 556,
+        "top3": 0.15467625899280577
+      },
+      "macro_accuracy": 0.08515377889901153,
+      "macro_f1": 0.08233735044691172,
+      "n": 571,
+      "top3": 0.16637478108581435
+    },
+    "ridge": {
+      "accuracy": 0.1436077057793345,
+      "correct": 82,
+      "letters_only": {
+        "accuracy": 0.12589928057553956,
+        "correct": 70,
+        "macro_accuracy": 0.12236703990136483,
+        "macro_f1": 0.10307278024844582,
+        "n": 556,
+        "top3": 0.2697841726618705
+      },
+      "macro_accuracy": 0.14746455694205501,
+      "macro_f1": 0.11834943542266663,
+      "n": 571,
+      "top3": 0.28371278458844135
+    },
+    "svm": {
+      "accuracy": 0.13485113835376533,
+      "correct": 77,
+      "letters_only": {
+        "accuracy": 0.12410071942446044,
+        "correct": 69,
+        "macro_accuracy": 0.12011249619945272,
+        "macro_f1": 0.10162904163122208,
+        "n": 556,
+        "top3": 0.3057553956834532
+      },
+      "macro_accuracy": 0.1354169716488557,
+      "macro_f1": 0.12213512937185601,
+      "n": 571,
+      "top3": 0.3134851138353765
+    }
+  },
+  "query_day": "2026-11-22",
+  "ridge_offset_sensitivity": {
+    "-12.5": {
+      "accuracy": 0.12084063047285463,
+      "correct": 69,
+      "macro_accuracy": 0.12662289965875015,
+      "macro_f1": 0.10660747992834711,
+      "n": 571,
+      "top3": 0.29246935201401053
+    },
+    "0": {
+      "accuracy": 0.1436077057793345,
+      "correct": 82,
+      "letters_only": {
+        "accuracy": 0.12589928057553956,
+        "correct": 70,
+        "macro_accuracy": 0.12236703990136483,
+        "macro_f1": 0.10307278024844582,
+        "n": 556,
+        "top3": 0.2697841726618705
+      },
+      "macro_accuracy": 0.14746455694205501,
+      "macro_f1": 0.11834943542266663,
+      "n": 571,
+      "top3": 0.28371278458844135
+    },
+    "12.5": {
+      "accuracy": 0.06830122591943957,
+      "correct": 39,
+      "macro_accuracy": 0.07438572459548813,
+      "macro_f1": 0.05387696565433279,
+      "n": 571,
+      "top3": 0.19964973730297722
+    }
+  },
+  "same_microphone": true,
+  "sample_rate": 48000,
+  "source_day": "2026-11-21",
+  "status": "exploratory",
+  "target_fit_labels": 0,
+  "timing": {
+    "issues": [
+      "insufficient_training_support",
+      "weak_or_ambiguous_calibration"
+    ],
+    "max_abs_validation_residual_ms": 10.984512856350193,
+    "method": "pilot-ac-rms-5ms-local-peak-affine",
+    "status": "needs_review",
+    "training_inliers_by_phase": {
+      "sync_end": 2,
+      "sync_start": 3
+    },
+    "validation_markers_by_phase": {
+      "sync_end": 3,
+      "sync_start": 4
+    }
+  },
+  "uniform_chance": 0.037037037037037035
+}

@@ -1,0 +1,280 @@
+{
+  "source": "reports/hear-recording-audit/feasibility.json",
+  "sha256": "4330abe924797147b8c148ea5443c8de82ef4274dfc3eda7515ba69609623e3a",
+  "minimum_per_letter_for_each_test": 5,
+  "formula": "ordered triples (A,B,C) with feasible pairs A→B and A→C, and B→C in the chronology inventory",
+  "actual_two_microphone_triples_verified": 0,
+  "interpretation": "Upper bounds for the same exported laptop events; adding a second view only restricts the intersection. Start gaps are elapsed hours.",
+  "rows": [
+    {
+      "vocabulary": "skaid12",
+      "tier": "linked",
+      "k": 1,
+      "pairs": 82,
+      "triples": 155,
+      "participants": 3,
+      "triples_both_start_gaps_ge_24h": 69
+    },
+    {
+      "vocabulary": "skaid12",
+      "tier": "linked",
+      "k": 2,
+      "pairs": 75,
+      "triples": 144,
+      "participants": 3,
+      "triples_both_start_gaps_ge_24h": 64
+    },
+    {
+      "vocabulary": "skaid12",
+      "tier": "linked",
+      "k": 3,
+      "pairs": 63,
+      "triples": 113,
+      "participants": 3,
+      "triples_both_start_gaps_ge_24h": 50
+    },
+    {
+      "vocabulary": "skaid12",
+      "tier": "linked",
+      "k": 5,
+      "pairs": 63,
+      "triples": 113,
+      "participants": 3,
+      "triples_both_start_gaps_ge_24h": 50
+    },
+    {
+      "vocabulary": "skaid12",
+      "tier": "linked",
+      "k": 10,
+      "pairs": 43,
+      "triples": 71,
+      "participants": 3,
+      "triples_both_start_gaps_ge_24h": 39
+    },
+    {
+      "vocabulary": "latin26",
+      "tier": "linked",
+      "k": 1,
+      "pairs": 0,
+      "triples": 0,
+      "participants": 0,
+      "triples_both_start_gaps_ge_24h": 0
+    },
+    {
+      "vocabulary": "latin26",
+      "tier": "linked",
+      "k": 2,
+      "pairs": 0,
+      "triples": 0,
+      "participants": 0,
+      "triples_both_start_gaps_ge_24h": 0
+    },
+    {
+      "vocabulary": "latin26",
+      "tier": "linked",
+      "k": 3,
+      "pairs": 0,
+      "triples": 0,
+      "participants": 0,
+      "triples_both_start_gaps_ge_24h": 0
+    },
+    {
+      "vocabulary": "latin26",
+      "tier": "linked",
+      "k": 5,
+      "pairs": 0,
+      "triples": 0,
+      "participants": 0,
+      "triples_both_start_gaps_ge_24h": 0
+    },
+    {
+      "vocabulary": "latin26",
+      "tier": "linked",
+      "k": 10,
+      "pairs": 0,
+      "triples": 0,
+      "participants": 0,
+      "triples_both_start_gaps_ge_24h": 0
+    },
+    {
+      "vocabulary": "skaid12",
+      "tier": "isolated80",
+      "k": 1,
+      "pairs": 46,
+      "triples": 58,
+      "participants": 3,
+      "triples_both_start_gaps_ge_24h": 21
+    },
+    {
+      "vocabulary": "skaid12",
+      "tier": "isolated80",
+      "k": 2,
+      "pairs": 41,
+      "triples": 52,
+      "participants": 3,
+      "triples_both_start_gaps_ge_24h": 18
+    },
+    {
+      "vocabulary": "skaid12",
+      "tier": "isolated80",
+      "k": 3,
+      "pairs": 37,
+      "triples": 46,
+      "participants": 3,
+      "triples_both_start_gaps_ge_24h": 15
+    },
+    {
+      "vocabulary": "skaid12",
+      "tier": "isolated80",
+      "k": 5,
+      "pairs": 37,
+      "triples": 46,
+      "participants": 3,
+      "triples_both_start_gaps_ge_24h": 15
+    },
+    {
+      "vocabulary": "skaid12",
+      "tier": "isolated80",
+      "k": 10,
+      "pairs": 19,
+      "triples": 17,
+      "participants": 2,
+      "triples_both_start_gaps_ge_24h": 7
+    },
+    {
+      "vocabulary": "latin26",
+      "tier": "isolated80",
+      "k": 1,
+      "pairs": 0,
+      "triples": 0,
+      "participants": 0,
+      "triples_both_start_gaps_ge_24h": 0
+    },
+    {
+      "vocabulary": "latin26",
+      "tier": "isolated80",
+      "k": 2,
+      "pairs": 0,
+      "triples": 0,
+      "participants": 0,
+      "triples_both_start_gaps_ge_24h": 0
+    },
+    {
+      "vocabulary": "latin26",
+      "tier": "isolated80",
+      "k": 3,
+      "pairs": 0,
+      "triples": 0,
+      "participants": 0,
+      "triples_both_start_gaps_ge_24h": 0
+    },
+    {
+      "vocabulary": "latin26",
+      "tier": "isolated80",
+      "k": 5,
+      "pairs": 0,
+      "triples": 0,
+      "participants": 0,
+      "triples_both_start_gaps_ge_24h": 0
+    },
+    {
+      "vocabulary": "latin26",
+      "tier": "isolated80",
+      "k": 10,
+      "pairs": 0,
+      "triples": 0,
+      "participants": 0,
+      "triples_both_start_gaps_ge_24h": 0
+    },
+    {
+      "vocabulary": "skaid12",
+      "tier": "verified80",
+      "k": 1,
+      "pairs": 42,
+      "triples": 57,
+      "participants": 2,
+      "triples_both_start_gaps_ge_24h": 21
+    },
+    {
+      "vocabulary": "skaid12",
+      "tier": "verified80",
+      "k": 2,
+      "pairs": 37,
+      "triples": 51,
+      "participants": 2,
+      "triples_both_start_gaps_ge_24h": 18
+    },
+    {
+      "vocabulary": "skaid12",
+      "tier": "verified80",
+      "k": 3,
+      "pairs": 33,
+      "triples": 45,
+      "participants": 2,
+      "triples_both_start_gaps_ge_24h": 15
+    },
+    {
+      "vocabulary": "skaid12",
+      "tier": "verified80",
+      "k": 5,
+      "pairs": 33,
+      "triples": 45,
+      "participants": 2,
+      "triples_both_start_gaps_ge_24h": 15
+    },
+    {
+      "vocabulary": "skaid12",
+      "tier": "verified80",
+      "k": 10,
+      "pairs": 18,
+      "triples": 17,
+      "participants": 2,
+      "triples_both_start_gaps_ge_24h": 7
+    },
+    {
+      "vocabulary": "latin26",
+      "tier": "verified80",
+      "k": 1,
+      "pairs": 0,
+      "triples": 0,
+      "participants": 0,
+      "triples_both_start_gaps_ge_24h": 0
+    },
+    {
+      "vocabulary": "latin26",
+      "tier": "verified80",
+      "k": 2,
+      "pairs": 0,
+      "triples": 0,
+      "participants": 0,
+      "triples_both_start_gaps_ge_24h": 0
+    },
+    {
+      "vocabulary": "latin26",
+      "tier": "verified80",
+      "k": 3,
+      "pairs": 0,
+      "triples": 0,
+      "participants": 0,
+      "triples_both_start_gaps_ge_24h": 0
+    },
+    {
+      "vocabulary": "latin26",
+      "tier": "verified80",
+      "k": 5,
+      "pairs": 0,
+      "triples": 0,
+      "participants": 0,
+      "triples_both_start_gaps_ge_24h": 0
+    },
+    {
+      "vocabulary": "latin26",
+      "tier": "verified80",
+      "k": 10,
+      "pairs": 0,
+      "triples": 0,
+      "participants": 0,
+      "triples_both_start_gaps_ge_24h": 0
+    }
+  ]
+}
